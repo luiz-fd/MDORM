@@ -23,7 +23,7 @@ public class Atividade {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Integer id;
 	private String nome;
 	@Column(columnDefinition = "TEXT")
 	private String descricao;
@@ -46,7 +46,7 @@ public class Atividade {
 		
 	}
 
-	public Atividade(Long id, String nome, String descricao, Double preco, Categoria categoria) {
+	public Atividade(Integer id, String nome, String descricao, Double preco, Categoria categoria) {
 		this.id = id;
 		this.nome = nome;
 		this.descricao = descricao;
@@ -54,11 +54,11 @@ public class Atividade {
 		this.categoria = categoria;
 	}
 
-	public Long getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
