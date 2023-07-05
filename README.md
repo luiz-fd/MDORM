@@ -19,6 +19,5 @@ A aplicação consiste em gerenciar as informações dos participantes das ativi
 ## Back end
 - Java
 - Spring Boot
-- JPA
 - Maven
 - H2
